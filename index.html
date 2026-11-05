@@ -3,192 +3,413 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>EDDY CLOTHING — Modern Menswear</title>
-<meta name="description" content="EDDY CLOTHING: modern menswear. Premium essentials, outerwear, and footwear crafted for everyday wear." />
+<title>EDDY CLOTHING — Modern Menswear | Premium Essentials &amp; Outerwear</title>
+<meta name="description" content="EDDY CLOTHING: premium menswear essentials, outerwear and footwear. Crafted in small batches from natural fibres. Free shipping over R1,000. 30-day returns." />
+<meta name="keywords" content="menswear, clothing, essentials, outerwear, footwear, EDDY CLOTHING, premium fashion, South Africa" />
+<meta name="author" content="EDDY CLOTHING" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://codeflare-tech.github.io/eddy-clothing/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EDDY CLOTHING — Modern Menswear" />
+<meta property="og:description" content="Premium essentials, outerwear and footwear crafted for everyday wear." />
+<meta property="og:url" content="https://codeflare-tech.github.io/eddy-clothing/" />
+<meta property="og:image" content="https://codeflare-tech.github.io/eddy-clothing/images/hero.webp" />
+<meta property="og:site_name" content="EDDY CLOTHING" />
+<meta property="og:locale" content="en_ZA" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EDDY CLOTHING — Modern Menswear" />
+<meta name="twitter:description" content="Premium essentials, outerwear and footwear crafted for everyday wear." />
+<meta name="twitter:image" content="https://codeflare-tech.github.io/eddy-clothing/images/hero.webp" />
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="theme-color" content="#0b0b0c" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "EDDY CLOTHING",
+  "url": "https://codeflare-tech.github.io/eddy-clothing/",
+  "logo": "https://codeflare-tech.github.io/eddy-clothing/favicon.png",
+  "description": "Premium menswear essentials, outerwear and footwear.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "42 Long Street",
+    "addressLocality": "Cape Town",
+    "postalCode": "8001",
+    "addressCountry": "ZA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+27-21-555-0142",
+    "contactType": "customer service",
+    "email": "hello@eddyclothing.co.za"
+  }
+}
+</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announce" role="region" aria-label="Announcement">
+    <p>Free shipping on orders over R1,000 · 30-day returns · Crafted in South Africa</p>
+  </div>
+
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="#home" class="logo">EDDY<span>CLOTHING</span></a>
-      <nav class="nav" id="nav">
+      <a href="#home" class="logo" aria-label="EDDY CLOTHING home">EDDY<span>CLOTHING</span></a>
+      <nav class="nav" id="nav" aria-label="Primary">
         <a href="#home">Home</a>
         <a href="#shop">Shop</a>
         <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
-        <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <button class="icon-btn" id="searchToggle" aria-label="Open search" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
         </button>
-        <button class="icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+        <button class="icon-btn" id="wishlistToggle" aria-label="Wishlist" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="cart-count" id="wishCount">0</span>
+        </button>
+        <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open cart" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
           <span class="cart-count" id="cartCount">0</span>
         </button>
-        <button class="menu-btn" id="menuToggle" aria-label="Menu">
+        <button class="menu-btn" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="hero-media">
-      <img src="images/hero.png" alt="EDDY CLOTHING editorial" />
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="container hero-content">
-      <p class="eyebrow">New Season — Autumn / Winter</p>
-      <h1>Crafted for the<br/>modern man.</h1>
-      <p class="hero-sub">Premium essentials, outerwear and footwear. Built to last, designed to move.</p>
-      <div class="hero-cta">
-        <a href="#shop" class="btn btn-primary">Shop the Collection</a>
-        <a href="#about" class="btn btn-ghost">Our Story</a>
+  <main id="main">
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-media">
+        <img src="images/hero.webp" alt="EDDY CLOTHING editorial — model in tailored blazer" width="1280" height="720" fetchpriority="high" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow">New Season — Autumn / Winter</p>
+        <h1>Crafted for the<br/>modern man.</h1>
+        <p class="hero-sub">Premium essentials, outerwear and footwear. Built to last, designed to move.</p>
+        <div class="hero-cta">
+          <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+          <a href="#about" class="btn btn-ghost">Our Story</a>
+        </div>
+        <div class="hero-trust">
+          <span>★ 4.9 / 5 from 2,400+ reviews</span>
+          <span>Free shipping over R1,000</span>
+          <span>30-day returns</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Free shipping over R1,000</span><span>•</span>
+        <span>30-day returns</span><span>•</span>
+        <span>Premium natural fibres</span><span>•</span>
+        <span>Crafted in South Africa</span><span>•</span>
+        <span>Small-batch production</span><span>•</span>
+        <span>Lifetime repair guarantee</span><span>•</span>
+        <span>Free shipping over R1,000</span><span>•</span>
+        <span>30-day returns</span><span>•</span>
+        <span>Premium natural fibres</span><span>•</span>
+        <span>Crafted in South Africa</span><span>•</span>
+        <span>Small-batch production</span><span>•</span>
+        <span>Lifetime repair guarantee</span><span>•</span>
       </div>
     </div>
-  </section>
 
-  <section class="marquee">
-    <div class="marquee-track">
-      <span>Free shipping over R1,000</span><span>•</span>
-      <span>30-day returns</span><span>•</span>
-      <span>Premium fabrics</span><span>•</span>
-      <span>Crafted in South Africa</span><span>•</span>
-      <span>Free shipping over R1,000</span><span>•</span>
-      <span>30-day returns</span><span>•</span>
-      <span>Premium fabrics</span><span>•</span>
-      <span>Crafted in South Africa</span><span>•</span>
-    </div>
-  </section>
+    <section class="shop" id="shop" aria-labelledby="shopTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Collection</p>
+            <h2 id="shopTitle">The Edit</h2>
+          </div>
+          <div class="shop-controls">
+            <div class="filters" id="filters" role="tablist" aria-label="Filter by category">
+              <button class="filter active" data-cat="all" role="tab" aria-selected="true">All</button>
+              <button class="filter" data-cat="tops" role="tab" aria-selected="false">Tops</button>
+              <button class="filter" data-cat="outerwear" role="tab" aria-selected="false">Outerwear</button>
+              <button class="filter" data-cat="bottoms" role="tab" aria-selected="false">Bottoms</button>
+              <button class="filter" data-cat="footwear" role="tab" aria-selected="false">Footwear</button>
+            </div>
+            <div class="sort-wrap">
+              <label for="sortSelect" class="sr-only">Sort products</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Name: A–Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>
+          <p>No products match your filters.</p>
+          <button class="btn btn-ghost" id="clearFilters">Clear filters</button>
+        </div>
+      </div>
+    </section>
 
-  <section class="shop" id="shop">
-    <div class="container">
-      <div class="section-head">
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <div class="about-img">
+          <img src="images/leather.webp" alt="EDDY CLOTHING craft — leather jacket detail" width="800" height="1000" loading="lazy" />
+        </div>
+        <div class="about-text">
+          <p class="eyebrow">Our Story</p>
+          <h2 id="aboutTitle">Slow fashion. Sharp silhouettes.</h2>
+          <p>EDDY CLOTHING was built on a simple idea: a wardrobe of fewer, better pieces. We source premium natural fibres, cut with precision, and finish by hand. No seasons of waste — just clothing that earns its place.</p>
+          <ul class="about-list">
+            <li>Premium natural fibres — merino, cotton, linen, leather</li>
+            <li>Ethical, small-batch production</li>
+            <li>Lifetime repair guarantee on all garments</li>
+            <li>Carbon-neutral shipping</li>
+          </ul>
+          <a href="#shop" class="btn btn-primary">Explore the Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-labelledby="featuresTitle">
+      <div class="container">
+        <h2 class="sr-only" id="featuresTitle">Why EDDY</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">✦</div>
+            <h3>Premium fabrics</h3>
+            <p>Natural fibres sourced from trusted mills. Built to soften, not wear out.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">↺</div>
+            <h3>30-day returns</h3>
+            <p>Free returns on all unworn items. No questions asked.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚙</div>
+            <h3>Lifetime repair</h3>
+            <p>We repair what we make. Send it back, we fix it free.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🔒</div>
+            <h3>Secure checkout</h3>
+            <p>256-bit encrypted payments. We never store your full card details.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faqTitle">
+      <div class="container faq-wrap">
+        <div class="section-head center">
+          <p class="eyebrow">Help</p>
+          <h2 id="faqTitle">Frequently asked questions</h2>
+        </div>
+        <div class="faq-list" id="faqList">
+          <details class="faq-item">
+            <summary>How long does shipping take?</summary>
+            <p>Standard delivery within South Africa takes 3–5 business days. Express delivery (1–2 business days) is available at checkout for R120.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is your return policy?</summary>
+            <p>We accept returns within 30 days of delivery on unworn, unwashed items with original tags. Refunds are processed within 5 business days of receiving the return.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I find my size?</summary>
+            <p>See our size guide in the shop. Each product page lists measurements. If you're between sizes, we recommend sizing up for outerwear and down for knitwear.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you ship internationally?</summary>
+            <p>Yes — we ship to most countries. International rates and delivery times are calculated at checkout.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I care for my garments?</summary>
+            <p>Care labels are sewn into every piece. Most items are machine washable on cold; leather and knitwear should be hand-washed or dry-cleaned.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is my payment secure?</summary>
+            <p>All transactions are encrypted with 256-bit SSL. We never store your full card details.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsTitle">
+      <div class="container newsletter-inner">
         <div>
-          <p class="eyebrow">Collection</p>
-          <h2>The Edit</h2>
+          <p class="eyebrow">Stay in the loop</p>
+          <h2 id="newsTitle">Join the EDDY list</h2>
+          <p>Early access to new drops, restocks and member-only offers. No spam, ever.</p>
         </div>
-        <div class="filters" id="filters">
-          <button class="filter active" data-cat="all">All</button>
-          <button class="filter" data-cat="tops">Tops</button>
-          <button class="filter" data-cat="outerwear">Outerwear</button>
-          <button class="filter" data-cat="bottoms">Bottoms</button>
-          <button class="filter" data-cat="footwear">Footwear</button>
-        </div>
-      </div>
-      <div class="product-grid" id="productGrid"></div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-img">
-        <img src="images/leather.png" alt="EDDY CLOTHING craft" />
-      </div>
-      <div class="about-text">
-        <p class="eyebrow">Our Story</p>
-        <h2>Slow fashion. Sharp silhouettes.</h2>
-        <p>EDDY CLOTHING was built on a simple idea: a wardrobe of fewer, better pieces. We source premium fabrics, cut with precision, and finish by hand. No seasons of waste — just clothing that earns its place.</p>
-        <ul class="about-list">
-          <li>Premium natural fibres</li>
-          <li>Ethical, small-batch production</li>
-          <li>Lifetime repair guarantee</li>
-        </ul>
-        <a href="#shop" class="btn btn-primary">Explore the Collection</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-head center">
-        <p class="eyebrow">Get in touch</p>
-        <h2>Visit or write to us</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="info-block">
-            <h4>Studio</h4>
-            <p>42 Long Street<br/>Cape Town, 8001<br/>South Africa</p>
-          </div>
-          <div class="info-block">
-            <h4>Hours</h4>
-            <p>Mon – Sat: 10:00 – 18:00<br/>Sun: 11:00 – 16:00</p>
-          </div>
-          <div class="info-block">
-            <h4>Contact</h4>
-            <p>hello@eddyclothing.co.za<br/>+27 21 555 0142</p>
-          </div>
-        </div>
-        <form class="contact-form" id="contactForm">
-          <div class="field"><input type="text" placeholder="Your name" required /></div>
-          <div class="field"><input type="email" placeholder="Email address" required /></div>
-          <div class="field"><textarea placeholder="Message" rows="4" required></textarea></div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note" id="formNote"></p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required aria-label="Email address" />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
         </form>
+        <p class="form-note" id="newsNote"></p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="site-footer">
+    <section class="contact" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contactTitle">Visit or write to us</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="info-block">
+              <h4>Studio</h4>
+              <p>42 Long Street<br/>Cape Town, 8001<br/>South Africa</p>
+            </div>
+            <div class="info-block">
+              <h4>Hours</h4>
+              <p>Mon – Sat: 10:00 – 18:00<br/>Sun: 11:00 – 16:00</p>
+            </div>
+            <div class="info-block">
+              <h4>Contact</h4>
+              <p><a href="mailto:hello@eddyclothing.co.za">hello@eddyclothing.co.za</a><br/><a href="tel:+27215550142">+27 21 555 0142</a></p>
+            </div>
+            <div class="info-block">
+              <h4>Follow</h4>
+              <div class="social-row">
+                <a href="#" aria-label="Instagram" class="social-link">IG</a>
+                <a href="#" aria-label="Facebook" class="social-link">FB</a>
+                <a href="#" aria-label="TikTok" class="social-link">TT</a>
+                <a href="#" aria-label="X" class="social-link">X</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="field"><input type="text" placeholder="Your name" required autocomplete="name" /></div>
+            <div class="field"><input type="email" placeholder="Email address" required autocomplete="email" /></div>
+            <div class="field"><input type="text" placeholder="Subject" /></div>
+            <div class="field"><textarea placeholder="Message" rows="4" required></textarea></div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <div>
+      <div class="footer-brand">
         <a href="#home" class="logo">EDDY<span>CLOTHING</span></a>
-        <p class="footer-tag">Modern menswear. Cape Town.</p>
+        <p class="footer-tag">Modern menswear. Cape Town. Est. 2026.</p>
+        <div class="payment-icons" aria-label="Accepted payments">
+          <span>VISA</span><span>MC</span><span>AMEX</span><span>PAYPAL</span><span>APPLE PAY</span>
+        </div>
       </div>
       <div class="footer-cols">
         <div>
           <h5>Shop</h5>
-          <a href="#shop">All</a><a href="#shop">Tops</a><a href="#shop">Outerwear</a>
+          <a href="#shop" data-catlink="all">All Products</a>
+          <a href="#shop" data-catlink="tops">Tops</a>
+          <a href="#shop" data-catlink="outerwear">Outerwear</a>
+          <a href="#shop" data-catlink="bottoms">Bottoms</a>
+          <a href="#shop" data-catlink="footwear">Footwear</a>
         </div>
         <div>
           <h5>Company</h5>
-          <a href="#about">About</a><a href="#contact">Contact</a><a href="#">Careers</a>
+          <a href="#about">About</a>
+          <a href="#" data-modal="shippingModal">Shipping &amp; Returns</a>
+          <a href="#" data-modal="sizeModal">Size Guide</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
         </div>
         <div>
-          <h5>Support</h5>
-          <a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size Guide</a>
+          <h5>Legal</h5>
+          <a href="#" data-modal="privacyModal">Privacy Policy</a>
+          <a href="#" data-modal="termsModal">Terms of Service</a>
+          <a href="#" data-modal="cookiesModal">Cookie Policy</a>
         </div>
       </div>
     </div>
     <div class="container footer-bottom">
       <p>© 2026 EDDY CLOTHING. All rights reserved.</p>
+      <p class="footer-credit">Built with care in Cape Town.</p>
     </div>
   </footer>
 
-  <!-- Search overlay -->
-  <div class="overlay" id="searchOverlay">
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-label="Search">
     <div class="overlay-box">
-      <input type="text" id="searchInput" placeholder="Search products…" />
-      <button class="close-btn" data-close="searchOverlay">✕</button>
+      <input type="search" id="searchInput" placeholder="Search products…" aria-label="Search products" />
+      <button class="close-btn" data-close="searchOverlay" aria-label="Close search">✕</button>
     </div>
   </div>
 
-  <!-- Product modal -->
-  <div class="overlay" id="productModal">
+  <div class="overlay" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
     <div class="modal" id="productModalContent"></div>
   </div>
 
-  <!-- Cart drawer -->
-  <div class="drawer" id="cartDrawer">
+  <div class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
     <div class="drawer-head">
       <h3>Your Cart</h3>
-      <button class="close-btn" data-close="cartDrawer">✕</button>
+      <button class="close-btn" data-close="cartDrawer" aria-label="Close cart">✕</button>
     </div>
     <div class="drawer-body" id="cartBody"></div>
     <div class="drawer-foot" id="cartFoot"></div>
   </div>
-  <div class="backdrop" id="backdrop"></div>
 
-  <!-- Checkout modal -->
-  <div class="overlay" id="checkoutModal">
+  <div class="overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout">
     <div class="modal modal-checkout" id="checkoutContent"></div>
   </div>
 
-  <script src="js/app.js"></script>
+  <div class="overlay" id="confirmModal" role="dialog" aria-modal="true" aria-label="Order confirmation">
+    <div class="modal modal-checkout" id="confirmContent"></div>
+  </div>
+
+  <div class="overlay" id="sizeModal" role="dialog" aria-modal="true" aria-label="Size guide">
+    <div class="modal modal-checkout" id="sizeContent"></div>
+  </div>
+
+  <div class="overlay" id="shippingModal" role="dialog" aria-modal="true" aria-label="Shipping and returns">
+    <div class="modal modal-checkout" id="shippingContent"></div>
+  </div>
+
+  <div class="overlay" id="privacyModal" role="dialog" aria-modal="true" aria-label="Privacy policy">
+    <div class="modal modal-checkout" id="privacyContent"></div>
+  </div>
+
+  <div class="overlay" id="termsModal" role="dialog" aria-modal="true" aria-label="Terms of service">
+    <div class="modal modal-checkout" id="termsContent"></div>
+  </div>
+
+  <div class="overlay" id="cookiesModal" role="dialog" aria-modal="true" aria-label="Cookie policy">
+    <div class="modal modal-checkout" id="cookiesContent"></div>
+  </div>
+
+  <div class="drawer" id="wishDrawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+    <div class="drawer-head">
+      <h3>Wishlist</h3>
+      <button class="close-btn" data-close="wishDrawer" aria-label="Close wishlist">✕</button>
+    </div>
+    <div class="drawer-body" id="wishBody"></div>
+  </div>
+
+  <div class="backdrop" id="backdrop"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js" defer></script>
 </body>
 </html>
