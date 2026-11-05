@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://codeflare-tech.github.io/eddy-clothing/sitemap.xml
