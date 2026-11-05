@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EDDY CLOTHING — Modern Menswear</title>
+<meta name="description" content="EDDY CLOTHING: modern menswear. Premium essentials, outerwear, and footwear crafted for everyday wear." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="logo">EDDY<span>CLOTHING</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-btn" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="images/hero.png" alt="EDDY CLOTHING editorial" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow">New Season — Autumn / Winter</p>
+      <h1>Crafted for the<br/>modern man.</h1>
+      <p class="hero-sub">Premium essentials, outerwear and footwear. Built to last, designed to move.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+        <a href="#about" class="btn btn-ghost">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee">
+    <div class="marquee-track">
+      <span>Free shipping over R1,000</span><span>•</span>
+      <span>30-day returns</span><span>•</span>
+      <span>Premium fabrics</span><span>•</span>
+      <span>Crafted in South Africa</span><span>•</span>
+      <span>Free shipping over R1,000</span><span>•</span>
+      <span>30-day returns</span><span>•</span>
+      <span>Premium fabrics</span><span>•</span>
+      <span>Crafted in South Africa</span><span>•</span>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Collection</p>
+          <h2>The Edit</h2>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-cat="all">All</button>
+          <button class="filter" data-cat="tops">Tops</button>
+          <button class="filter" data-cat="outerwear">Outerwear</button>
+          <button class="filter" data-cat="bottoms">Bottoms</button>
+          <button class="filter" data-cat="footwear">Footwear</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-img">
+        <img src="images/leather.png" alt="EDDY CLOTHING craft" />
+      </div>
+      <div class="about-text">
+        <p class="eyebrow">Our Story</p>
+        <h2>Slow fashion. Sharp silhouettes.</h2>
+        <p>EDDY CLOTHING was built on a simple idea: a wardrobe of fewer, better pieces. We source premium fabrics, cut with precision, and finish by hand. No seasons of waste — just clothing that earns its place.</p>
+        <ul class="about-list">
+          <li>Premium natural fibres</li>
+          <li>Ethical, small-batch production</li>
+          <li>Lifetime repair guarantee</li>
+        </ul>
+        <a href="#shop" class="btn btn-primary">Explore the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head center">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Visit or write to us</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-block">
+            <h4>Studio</h4>
+            <p>42 Long Street<br/>Cape Town, 8001<br/>South Africa</p>
+          </div>
+          <div class="info-block">
+            <h4>Hours</h4>
+            <p>Mon – Sat: 10:00 – 18:00<br/>Sun: 11:00 – 16:00</p>
+          </div>
+          <div class="info-block">
+            <h4>Contact</h4>
+            <p>hello@eddyclothing.co.za<br/>+27 21 555 0142</p>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="field"><input type="text" placeholder="Your name" required /></div>
+          <div class="field"><input type="email" placeholder="Email address" required /></div>
+          <div class="field"><textarea placeholder="Message" rows="4" required></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#home" class="logo">EDDY<span>CLOTHING</span></a>
+        <p class="footer-tag">Modern menswear. Cape Town.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h5>Shop</h5>
+          <a href="#shop">All</a><a href="#shop">Tops</a><a href="#shop">Outerwear</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="#about">About</a><a href="#contact">Contact</a><a href="#">Careers</a>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size Guide</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 EDDY CLOTHING. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Search overlay -->
+  <div class="overlay" id="searchOverlay">
+    <div class="overlay-box">
+      <input type="text" id="searchInput" placeholder="Search products…" />
+      <button class="close-btn" data-close="searchOverlay">✕</button>
+    </div>
+  </div>
+
+  <!-- Product modal -->
+  <div class="overlay" id="productModal">
+    <div class="modal" id="productModalContent"></div>
+  </div>
+
+  <!-- Cart drawer -->
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="close-btn" data-close="cartDrawer">✕</button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot" id="cartFoot"></div>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Checkout modal -->
+  <div class="overlay" id="checkoutModal">
+    <div class="modal modal-checkout" id="checkoutContent"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
